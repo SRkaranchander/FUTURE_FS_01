@@ -1,5 +1,46 @@
 /* Reset and font */
 /* Reset and font */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .navbar ul {
+        padding: 0;
+    }
+
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .section {
+        flex-direction: column;
+        padding: 80px 20px 40px 20px;
+    }
+
+    .section-content {
+        padding: 20px;
+        width: 100%;
+        font-size: 16px;
+        overflow-x: hidden;
+    }
+
+    .section-content img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 10px auto;
+    }
+
+    .footer {
+        font-size: 14px;
+        text-align: center;
+        padding: 20px 10px;
+    }
+}
 * {
     margin: 0;
     padding: 0;
