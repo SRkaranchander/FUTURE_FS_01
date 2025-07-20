@@ -1,0 +1,151 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Responsive Styles (Mobile - Tablets) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .navbar ul {
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .section {
+        flex-direction: column;
+        padding: 80px 20px 40px 20px;
+    }
+
+    .section-content {
+        padding: 20px;
+        width: 100%;
+        font-size: 16px;
+        overflow-x: hidden;
+    }
+
+    .section-content img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 10px auto;
+    }
+
+    .footer {
+        font-size: 14px;
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    h1, h3 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 16px;
+        text-align: justify;
+    }
+}
+
+/* Body Background */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('img/urban-architecture-black-white-from-new-york-city-manhattan.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    flex-direction: column;
+}
+
+/* Optional Overlay */
+.overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Transparent black */
+    z-index: 1;
+}
+
+/* Content on top of overlay */
+.content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+}
+
+/* Headings */
+h1 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+h1:hover {
+    letter-spacing: 10px;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.7);
+}
+
+h3 {
+    letter-spacing: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+#size{
+    font-size: larger;
+}
+h3:hover {
+    font-size: larger;
+}
+
+/* Paragraphs */
+p {
+    padding: 10px;
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+/* Links */
+a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 1.5em;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #757575;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
