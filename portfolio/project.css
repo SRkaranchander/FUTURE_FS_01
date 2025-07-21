@@ -82,7 +82,7 @@ body {
 
 /* Generic Section */
 .section {
-    padding: 10vh 5vw 5vh;
+    padding: 40px 50px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
