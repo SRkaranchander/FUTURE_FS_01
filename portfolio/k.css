@@ -86,7 +86,7 @@ h1 {
     font-size: clamp(1.8rem, 3vw, 2.2rem);
     border-bottom: 3px solid grey;
     color: #aaa;
-    text-align: center;
+    
 }
 
 h2 {
@@ -95,7 +95,7 @@ h2 {
     margin-bottom: 20px;
     padding-bottom: 8px;
     border-bottom: 2px solid #aaa;
-    text-align: center;
+  
 }
 
 h3 {
