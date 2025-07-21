@@ -136,15 +136,18 @@ h3 {
 /* Image Gallery */
 .img-gallery {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     gap: 1.5rem;
     margin-top: 1rem;
     width: 100%;
+    display: flex;
+    flex-wrap: nowrap;           /* All images in a single row */
+    gap: 10px;                  
+    justify-content: flex-start; 
+    overflow-x: auto;  
 }
 
 .img-gallery img {
-    width: clamp(90%, 28%, 30%);
+    width: 30%;
     border-radius: 8px;
     box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
 }
