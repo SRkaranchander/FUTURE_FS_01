@@ -1,0 +1,155 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Full Page Setup */
+html,
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url('img/urban-architecture-black-white-from-new-york-city-manhattan.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    overflow-x: hidden;
+    font-size: 1rem;
+    /* base font size */
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem 2vw;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 1rem;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #83827e;
+}
+
+/* Main Content Wrapper */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 80px;
+    /* offset for fixed nav */
+}
+
+/* Section */
+.section {
+    padding: 10vh 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive Box */
+.section-content {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 2rem;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 1000px;
+    color: white;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    box-shadow: 0 0 12px #444;
+}
+
+/* Heading */
+h2 {
+    color: #c0c0c0;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    border-bottom: 2px solid #c0c0c0;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+/* Paragraph */
+.section-content p {
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    text-align: justify;
+}
+
+/* Footer */
+.footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    padding: 2rem 5vw;
+    font-size: clamp(0.8rem, 1vw, 1rem);
+    color: white;
+    width: 100%;
+}
+
+/* Icons or Social Links */
+#icon {
+    padding-right: 10px;
+    word-spacing: 15px;
+    text-decoration: none;
+    font-size: clamp(1rem, 1.5vw, 1.3rem);
+}
+
+/* Images inside content */
+.section-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+}
+
+/* Global Links */
+a {
+    color: #00acee;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Optional container spacing if needed */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}

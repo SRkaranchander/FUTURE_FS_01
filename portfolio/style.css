@@ -1,0 +1,175 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Body Setup */
+body {
+    background-image: url('img/urban-architecture-black-white-from-new-york-city-manhattan.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-size: clamp(0.95rem, 1.2vw, 1.15rem);
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem 5vw;
+    z-index: 1000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #83827e;
+}
+
+/* Section */
+.section {
+    padding: 15vh 5vw 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-direction: column;
+}
+
+/* Section Content Box */
+.section-content {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 1200px;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    color: white;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+/* About Section Layout */
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image */
+.about-image {
+    flex: 1 1 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    margin: auto;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 290px;
+    border-radius: 5px;
+    box-shadow: 0 0 12px rgb(167, 157, 157);
+}
+
+/* Text Block */
+.about-text {
+    flex: 1 1 400px;
+    font-size: inherit;
+    text-align: justify;
+    line-height: 1.8;
+    padding: 0.5rem;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+td {
+    padding: 12px;
+    vertical-align: top;
+    color: white;
+    border: none;
+    font-size: clamp(1rem, 1.3vw, 1.1rem);
+}
+
+/* Heading */
+h2 {
+    color: #848080;
+    margin-bottom: 1rem;
+    padding-bottom: 0.3rem;
+    font-weight: bold;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    border-bottom: 2px solid #aaa;
+    text-align: center;
+}
+
+/* Paragraph */
+.we {
+    font-size: clamp(1rem, 1.4vw, 1.2rem);
+    text-align: justify;
+    padding: 10px 0;
+    line-height: 1.8;
+}
+
+/* Default Links */
+a {
+    color: #00acee;
+    text-decoration: none;
+    font-size: inherit;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    padding: 2rem 10vw;
+    font-size: clamp(0.9rem, 1vw, 1rem);
+    color: white;
+    margin-top: 20px;
+    width: 100%;
+}

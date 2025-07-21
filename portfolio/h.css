@@ -1,0 +1,256 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* Body Styles */
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('img/urban-architecture-black-white-from-new-york-city-manhattan.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+}
+
+
+/* Optional Overlay */
+.overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+
+/* Main Content */
+.content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+}
+
+
+/* Typography */
+h1 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.5em;
+    transition: all 0.3s ease;
+}
+
+h1:hover {
+    letter-spacing: 10px;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.7);
+}
+
+h3 {
+    letter-spacing: 5px;
+    font-size: 1.7em;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+h3:hover {
+    font-size: larger;
+}
+
+#size {
+    font-size: larger;
+}
+
+p {
+    padding: 10px;
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+
+/* Links */
+a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 1.3em;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #757575;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+
+/* Media Queries */
+
+/* Extra Small Devices (Phones < 576px) */
+@media (max-width: 575px) {
+
+    h1,
+    h3 {
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+    p,
+    a {
+        font-size: 1.1em;
+    }
+
+    .section {
+        padding: 50px 15px;
+    }
+
+    .section-content {
+        padding: 15px;
+        font-size: 14px;
+    }
+}
+
+
+/* Small Tablets (576px - 768px) */
+@media (min-width: 576px) and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .navbar ul {
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .section {
+        flex-direction: column;
+        padding: 70px 20px;
+    }
+
+    .section-content {
+        padding: 20px;
+        width: 100%;
+        font-size: 16px;
+        overflow-x: hidden;
+    }
+
+    .section-content img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 10px auto;
+    }
+
+    .footer {
+        font-size: 14px;
+        text-align: center;
+        padding: 20px 10px;
+    }
+
+    h1,
+    h3 {
+        text-align: center;
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+}
+
+
+/* Medium Devices - Tablets/Small Laptops (768px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    h1 {
+        font-size: 2.2em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    p,
+    a {
+        font-size: 1.3em;
+    }
+
+    .section {
+        padding: 100px 40px;
+    }
+
+    .section-content {
+        padding: 30px;
+        max-width: 700px;
+        margin: auto;
+    }
+}
+
+
+/* Large Devices - Desktops (1024px - 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    h1 {
+        font-size: 2.7em;
+    }
+
+    h3 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1.4em;
+    }
+
+    .section {
+        padding: 120px 60px;
+    }
+}
+
+
+/* Extra Large Screens (1440px and above) */
+@media (min-width: 1441px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    h3 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+
+    .section {
+        padding: 140px 100px;
+    }
+
+    .section-content {
+        max-width: 1000px;
+        margin: auto;
+    }
+}

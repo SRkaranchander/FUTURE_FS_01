@@ -1,0 +1,249 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* Body Setup */
+body {
+    background-image: url('img/urban-architecture-black-white-from-new-york-city-manhattan.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-size: clamp(0.95rem, 1.1vw, 1.15rem);
+    line-height: 1.6;
+}
+
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1rem 6vw;
+    z-index: 1000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    text-align: right;
+}
+
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+}
+
+
+.navbar ul li {
+    display: inline;
+}
+
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: clamp(0.9rem, 1.4vw, 1.1rem);
+    transition: color 0.3s ease;
+}
+
+
+.navbar ul li a:hover {
+    color: #83827e;
+}
+
+/* Section */
+.section {
+    padding: 15vh 5vw 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+
+/* Heading Levels */
+h1 {
+    padding-bottom: 10px;
+    font-size: clamp(1.8rem, 3vw, 2.2rem);
+    border-bottom: 3px solid grey;
+    color: #aaa;
+    text-align: center;
+}
+
+h2 {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    color: #d0d0d0;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #aaa;
+    text-align: center;
+}
+
+h3 {
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    color: #ccc;
+    margin-top: 1rem;
+}
+
+h4 {
+    font-size: clamp(1.3rem, 2vw, 1.6rem);
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #888;
+    color: #aaa;
+}
+
+/* Paragraph */
+p,
+.we {
+    margin-bottom: 20px;
+    line-height: 1.8;
+    text-align: justify;
+    font-size: clamp(1rem, 1.4vw, 1.15rem);
+    padding: 0 0.5rem;
+}
+
+/* Section Container */
+.section-content {
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 2rem;
+    border-radius: 16px;
+    max-width: 1200px;
+    width: 100%;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+}
+
+
+/* Responsive Dual Column Group */
+.dual-column {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+
+/* Entry Row */
+.achievement-entry {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: rgba(20, 20, 20, 0.8);
+    border-radius: 12px;
+    padding: 1.5rem;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+
+/* Entry Text */
+.achievement-text {
+    flex: 2 1 300px;
+    font-size: clamp(1rem, 1.3vw, 1.15rem);
+    text-align: justify;
+    padding-right: 10px;
+    line-height: 1.8;
+}
+
+
+/* Entry Image */
+.achievement-img {
+    flex: 1 1 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.achievement-img img {
+    max-width: 260px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+
+/* Images Inside Section (e.g. Publications) */
+.section-content img {
+    float: right;
+    max-width: 250px;
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+}
+
+
+/* Links */
+a {
+    color: #00acee;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Scrollable Content Box */
+.section-content.scrollable {
+    max-height: 700px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+/* Scrollbar Styles */
+.section-content.scrollable::-webkit-scrollbar {
+    width: 8px;
+}
+
+.section-content.scrollable::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.section-content.scrollable::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+
+/* Footer */
+.footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    padding: 2rem;
+    font-size: clamp(1rem, 1.2vw, 1.1rem);
+    color: white;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
